@@ -9,7 +9,6 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        colors: {
           'first-color': '#d90062',
           'first-alpha-color': '#d90062bf',
           'second-color': '#14192d',
@@ -26,7 +25,6 @@ const config: Config = {
           'text-color': '#222222',
           'white-alpha-color': '#ffffff80',
           'black-alpha-color': '#00000080',
-        },
       },
     },
   },

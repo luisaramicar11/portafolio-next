@@ -1,0 +1,4 @@
+.hero-image {
+    background-image: url('/hero-image-home.jpg');
+    background-attachment: fixed;
+}

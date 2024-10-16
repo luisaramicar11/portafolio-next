@@ -10,9 +10,9 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="fixed left-0 top-0 z-50 w-full bg-second-color py-4">
+    <header className="fixed left-0 top-0 z-50 w-full bg-second-color p-4 min-h-16">
       <section className="container mx-auto flex justify-between items-center">
-        <div className="logo">
+        <div className="">
           <Link href="/home" className="text-first-color font-bold text-2xl">Luisa Fda Ramírez C</Link>
         </div>
         <button onClick={toggleMenu} className="outline-none border-0 cursor-pointer bg-second-color">
