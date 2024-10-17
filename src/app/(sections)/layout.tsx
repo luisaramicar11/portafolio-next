@@ -12,7 +12,9 @@ export default function SectionsLayout({
                 className="font-raleway antialiased"
             >
                 <Header />
-                {children}
+                <main className="flex-grow container ">
+                    {children}
+                </main>
                 <Footer />
             </body>
         </html>

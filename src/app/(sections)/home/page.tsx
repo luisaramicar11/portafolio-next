@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <section className="relative">
       <article
-        className={`${styles['hero-image']} bg-cover bg-center h-screen`} // Corregido aquí
+        className={`${styles['hero-image']} bg-cover bg-center h-screen w-screen`} // Corregido aquí
       >
         <aside className="flex justify-center items-center text-center w-full h-full bg-black-alpha-color">
           <div className="text-white">

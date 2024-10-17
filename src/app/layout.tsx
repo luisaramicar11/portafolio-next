@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import Head from 'next/head';
+import { Anta } from "next/font/google";
 import "./globals.css";
+
+const anta = Anta({
+  subsets: ["latin"],
+  weight: ["400"]
+});
+
 
 export const metadata: Metadata = {
   title: "Mi portafolio",
@@ -36,7 +43,7 @@ export default function RootLayout({
         <link rel="icon" href="public/favicon.ico" />
       </Head>
       <body
-        className="font-raleway antialiased"
+        className={anta.className}
       >
         {children}
       </body>
