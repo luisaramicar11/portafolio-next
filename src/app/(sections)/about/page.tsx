@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function About() {
     return (
-        <section className="section container mx-auto lg:min-h-screen grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <section className="section container mx-auto lg:min-h-screen grid grid-cols-1 lg:grid-cols-3 gap-4 mt-36">
           <article className="text-lg-right lg:text-right mb-8">
             <aside className="text-center lg:text-right">
               <h1 className="text-2xl font-bold">Luisa Fernanda Ramírez Cardona</h1>
@@ -24,7 +24,7 @@ export default function About() {
             </div>
           </article>
           <article className="mb-8">
-          <div className="relative w-full h-80"> {/* Define un contenedor con una altura fija */}
+          <div className="relative w-full h-96"> {/* Define un contenedor con una altura fija */}
         <Image
             className="filter grayscale"
             src="/luisaRamirez.jpg"
