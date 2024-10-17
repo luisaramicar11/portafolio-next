@@ -6,7 +6,7 @@ export default function About() {
         <section className="section container mx-auto lg:min-h-screen grid grid-cols-1 lg:grid-cols-3 gap-4 mt-36">
           <article className="text-lg-right lg:text-right mb-8">
             <aside className="text-center lg:text-right">
-              <h1 className="text-2xl font-bold">Luisa Fernanda Ramírez Cardona</h1>
+              <h1 className="text-2xl font-bold">Luisa Fernanda Ramírez Cardona.</h1>
               <h5 className="text-base">Desarrolladora <i>Web</i></h5>
             </aside>
             <p className="mt-4">
