@@ -28,6 +28,7 @@ const ContactForm: React.FC = () => {
       setIsSubmitted(true);
     } catch (error) {
       setErrorMessage('Hubo un error al enviar tus datos.');
+      console.log(error);
     } finally {
       setIsLoading(false);
     }
