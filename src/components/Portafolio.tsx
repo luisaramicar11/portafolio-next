@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Modal from "./Modal";
-import Project from "./Project";
+import Project from "./Projects/Project";
 
 interface IPropsModal {
   closeModal: () => void;
@@ -29,9 +29,9 @@ const Portfolio = () => {
     {
         id: "trabajo-1",
         closeModal,
-        title: "CRUD CON NEXT Y TYPESCRIPT",
+        title: "CRUD WITH NEXT AND TYPESCRIPT",
         imgSrc: "/portfolio-1.jpg",
-        description: "Contiene un formulario para agregar nuevos productos y una tabla que muestra los productos creados. Cada fila de la tabla tiene botones para editar o borrar el producto.",
+        description: "It contains a form to add new products and a table that displays the created products. Each row of the table has buttons to edit or delete the product.",
         date: "20/08/2024",
         link: "https://github.com/luisaramicar11/crudProduct6"
     },
@@ -40,7 +40,7 @@ const Portfolio = () => {
         closeModal,
         title: "JUNTANA",
         imgSrc: "/portfolio-2.jpg",
-        description: "Juntana conecta a los viajeros con comunidades indígenas en Colombia, ofreciendo planes turísticos que incluyen visitas guiadas, talleres de artesanía, experiencias gastronómicas, ceremonias culturales, y excursiones a sitios naturales sagrados. El proyecto cuenta con vistas para explorar estos planes, una página de inicio, y una pasarela de pagos con Stripe.",
+        description: "Juntana connects travelers with indigenous communities in Colombia, offering tourist plans that include guided tours, handicraft workshops, culinary experiences, cultural ceremonies, and excursions to sacred natural sites. The project features views to explore these plans, a home page, and a payment gateway with Stripe.",
         date: "01/06/2024",
         link: "https://github.com/luisaramicar11/TourismProject"
     },
@@ -49,16 +49,27 @@ const Portfolio = () => {
         closeModal,
         title: "ECOMMERCE",
         imgSrc: "/portfolio-3.jpg",
-        description: "La aplicación es una solución responsive que aprovecha los servicios de la API de Marvel para presentar información relevante, e incorpora un e-commerce con integración a la pasarela de pagos Stripe.",
+        description: "The application is a responsive solution that leverages the Marvel API services to present relevant information and incorporates an e-commerce with integration to the Stripe payment gateway.",
         date: "12/12/2023",
         link: "https://github.com/luisaramicar11/Marvel"
-    }
+    },
+    {
+      id: "trabajo-4",
+      closeModal,
+      title: "SKILLSWAP",
+      imgSrc: "/portfolio-4.png",
+      description: "In a constantly evolving digital environment, updating and strengthening skills is crucial. SkillSwap addresses the challenges of collaborative learning, offering a smooth and effective digital experience for knowledge exchange.",
+      date: "30/09/2024",
+      link: "https://github.com/luisaramicar11/skillSwap"
+  },
 ]
 
   return (
-    <section id="portafolio" className="px-4 py-20">
+    <section id="projects" className="px-4 py-20 bg-gray-lighter-color">
       <div className="container mx-auto">
-        <h2 className="section-title border-t border-b border-first-color my-8 py-2 text-center text-gray-800 text-2xl font-semibold w-64 mx-auto">Mis trabajos</h2>
+      <h2 className="border-b-4 border-first-color my-8 py-2 text-center text-black text-3xl font-bold w-64 mx-auto mb-20">
+              PROJECTS
+            </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Project onClick={openModal}/>  
         </div>

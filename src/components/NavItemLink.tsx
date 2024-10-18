@@ -11,7 +11,7 @@ interface IProps {
 const NavItemLink = ({ path, title }: IProps) => {
     const currentPath = usePathname();
     return (
-        <Link href={path} className={`block py-4 text-first-color text-center font-bold  ${currentPath === path ? " text-white" : ""}`}>{title}</Link>
+        <Link href={path} className={`text-md block py-4 text-black text-center font-bold  ${currentPath === path ? " text-first-color" : ""}`}>{title}</Link>
     )
 }
 

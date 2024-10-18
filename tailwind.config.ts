@@ -16,6 +16,7 @@ const config: Config = {
           'third-color': '#501464',
           'third-alpha-color': '#501464bf',
           'white-color': '#ffffff',
+          'gray-lighter-color': '#FAFAFA',
           'gray-light-color': '#f3f3f3',
           'gray-color': '#cccccc',
           'gray-dark-color': '#666666',
@@ -25,6 +26,9 @@ const config: Config = {
           'text-color': '#222222',
           'white-alpha-color': '#ffffff80',
           'black-alpha-color': '#00000080',
+      },
+      fontFamily: {
+        'urbanist': ['var(--font-urbanist)', 'sans-serif'],
       },
     },
   },

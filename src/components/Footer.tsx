@@ -1,21 +1,45 @@
-import React from 'react';
+import Link from 'next/link'
+import { FaLinkedin, FaGithub, FaTwitter, FaYoutube } from 'react-icons/fa'
 
-const Footer: React.FC = () => {
+export default function Footer() {
   return (
-    <footer className="p-2 text-center text-white bg-[#501464]">
-      <small>
-        Sitio diseñado por{' '}
-        <a
+    <footer className="bg-black text-white py-10 h-80">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+          <div className="mb-6 md:mb-0">
+            <h2 className="text-xl font-bold mb-6 mt-10">LUISA RAMIREZ</h2>
+            <p className="text-sm max-w-md">
+            A Frontend Web Developer who designs the interface of websites and web applications, contributing to the overall success of the product.
+            </p>
+          </div>
+          <div className="md:text-right">
+            <h3 className="text-xl font-semibold mb-4 text-left">SOCIAL</h3>
+            <div className="flex space-x-4 justify-start md:justify-end">
+              <Link href="https://www.linkedin.com/in/luisa-fernanda-ram%C3%ADrez-cardona-0b486565/" className="text-white hover:text-gray-400 transition-colors">
+                <FaLinkedin size={24} />
+                <span className="sr-only">LinkedIn</span>
+              </Link>
+              <Link href="https://github.com/luisaramicar11" className="text-white hover:text-gray-400 transition-colors">
+                <FaGithub size={24} />
+                <span className="sr-only">GitHub</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="mt-20 text-center text-sm">
+        <small>
+        &copy; Copyright 2024 . Made by{' '}
+        <Link
           href="https://www.linkedin.com/in/luisa-fernanda-ram%C3%ADrez-cardona-0b486565/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#509ee3] transition-opacity duration-500 hover:opacity-75"
+          className="text-white-color font-bold transition-opacity duration-500 hover:opacity-75 border-b-2"
         >
           luisaramicar11
-        </a>
+        </Link>
       </small>
+        </div>
+      </div>
     </footer>
-  );
-};
-
-export default Footer;
+  )
+}

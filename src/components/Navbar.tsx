@@ -3,31 +3,31 @@ import NavItemLink from "./NavItemLink"
 
 const navItems = [
     {
-        title: 'Inicio',
-        path: '/'
+        title: 'HOME',
+        path: '#home'
     },
     {
-        title: 'Acerca',
-        path: '/about'
+        title: 'ABOUT',
+        path: '#about'
     },
     {
-        title: 'Servicios',
-        path: '/services'
+        title: 'SERVICES',
+        path: '#services'
     },
     {
-        title: 'Portafolio',
-        path: '/portfolio'
+        title: 'PROJECTS',
+        path: '#projects'
     },
     {
-        title: 'Contacto',
-        path: '/contact'
+        title: 'CONTACT',
+        path: '#contact'
     }
 ]
 
 const Navbar = () => {
     return (
         <nav className="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="text-md font-medium flex flex-col p-4 md:p-0 mt-4 border  rounded-lg  md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
                 {
                     navItems.map((navItem, index) => (
                         <li key={index} >
