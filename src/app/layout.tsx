@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Urbanist } from "next/font/google";
+import { Urbanist, Poppins } from "next/font/google";
 import "./globals.css";
 
 const urbanist = Urbanist({
@@ -7,6 +7,12 @@ const urbanist = Urbanist({
   weight: ["400", "500", "300", "600", "700", "800", "900"],
   variable: '--font-urbanist',
 });
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "300", "600", "700", "800", "900"],
+  variable: '--font-poppins',
+})
 
 export const metadata: Metadata = {
   title: "My portfolio",
@@ -26,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${urbanist.variable}`}>
+      <body className={`${urbanist.variable} ${poppins.variable}`} >
         {children}
       </body>
     </html>

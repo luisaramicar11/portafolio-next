@@ -26,9 +26,11 @@ const config: Config = {
           'text-color': '#222222',
           'white-alpha-color': '#ffffff80',
           'black-alpha-color': '#00000080',
+          'black-title': '#111',
       },
       fontFamily: {
         'urbanist': ['var(--font-urbanist)', 'sans-serif'],
+        'poppins': ['var(--font-poppins)', 'sans-serif'],
       },
     },
   },
