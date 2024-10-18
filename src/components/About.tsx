@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 export default function About() {
     return (
@@ -12,7 +11,7 @@ export default function About() {
                 I am a passionate <b>Frontend Web Developer</b> with experience in creating interactive and efficient applications. I am currently specializing in modern technologies such as Next.js and React.js, which allow me to build scalable web solutions. My experience has taught me to work effectively in agile teams and to face technical challenges with a problem-solving mindset.
             </p>
             <p className="mt-4 text-l text-gray-800 pb-10">
-            I'm looking for <b>Job</b> opportunities where I can apply my skills, continue learning, and grow professionally. Feel free to reach out if you have an opportunity that aligns with my experience.
+            I am looking for <b>Job</b> opportunities where I can apply my skills, continue learning, and grow professionally. Feel free to reach out if you have an opportunity that aligns with my experience.
             </p>
             <div className="text-center lg:text-left mt-4">
               <a

@@ -11,7 +11,7 @@ export default function Home() {
         <aside className="flex justify-center items-center text-center w-full h-full">
           <div className="text-white">
             <h2 className="text-[3.5vw] text-black p-0 font-bold m-4">
-              HEY, I'M LUISA 
+              HEY, I AM LUISA 
             </h2>
             <h3 className="text-[1.5vw] text-black m-4">Web developer passionate about building websites and applications </h3>
             <Link
