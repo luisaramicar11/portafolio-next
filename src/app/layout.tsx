@@ -10,8 +10,8 @@ const urbanist = Urbanist({
 
 export const metadata: Metadata = {
   title: "My portfolio",
-  description: "Creación de mi portafolio usando Next con TypeScript",
-  keywords: "Portafolio, desarrolladora web, html, css, javascript, react, next, typescript, Luisa Fernanda Ramirez Cardona, luisaramicar11",
+  description: "Creation of my portfolio using Next with TypeScript. You can see the deployed project [here](https://portafolio-next-beige.vercel.app/portfolio).",
+  keywords: "Portfolio, web developer, html, css, javascript, react, next, typescript, Luisa Fernanda Ramirez Cardona, luisaramicar11",
   authors: [{ name: "Luisa Fernanda Ramírez Cardona" }],
   robots: { index: true, follow: true },
   icons: {
