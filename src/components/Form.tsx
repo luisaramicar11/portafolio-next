@@ -37,13 +37,13 @@ const ContactForm: React.FC = () => {
   return (
     <section className="section py-8" >
       <form 
-        className="contact-form mx-auto w-4/5 md:w-1/2"
+        className="contact-form mx-auto w-4/5 md:w-1/3"
         action="https://getform.io/f/apjmdlga"
         method="POST"
         target="_blank"
         onSubmit={handleSubmit}
       >  
-          <label htmlFor="name">Name</label>
+          <label htmlFor="name" className='font-bold'>Name</label>
           <input 
             type="text"
             name="name"
@@ -51,10 +51,10 @@ const ContactForm: React.FC = () => {
             title="Name only accepts letters and whitespace."
             pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
             required
-            className="rounded border border-gray-300 p-4 mb-4 w-full"
+            className="font-bold rounded-md border border-gray-300 p-4 mb-4 w-full mt-2"
           />
             
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email" className='font-bold'>Email</label>
           <input 
             type="email"
             name="email"
@@ -62,10 +62,10 @@ const ContactForm: React.FC = () => {
             title="Invalid email"
             pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
             required
-            className="rounded border border-gray-300 p-4 mb-4 w-full"
+            className="font-bold rounded-md border border-gray-300 p-4 mb-4 w-full mt-2"
           />
 
-          <label htmlFor="comments">Message</label>
+          <label htmlFor="comments" className='font-bold'>Message</label>
           <textarea 
             name="comments"
             rows={5}
@@ -73,14 +73,17 @@ const ContactForm: React.FC = () => {
             title="Your comment must not exceed 255 characters"
             data-pattern="^.{1,255}$"
             required
-            className="rounded border border-gray-300 p-4 mb-4 w-full"
+            className="font-bold rounded-md border border-gray-300 p-4 mb-4 w-full resize-none mt-2"
           />
-  
+          
+          <div className='flex justify-center'>
           <input 
             type="submit" 
-            value="Enviar"
-            className="bg-yellow-400 text-white font-bold py-2 px-4 rounded cursor-pointer w-1/2 mx-auto"
+            value="SEND"
+            className="bg-first-color text-white font-bold py-2 px-4 rounded cursor-pointer w-1/3 mx-auto"
           />
+          </div>
+          
   
           {isLoading && (
             <div className="contact-form-loader mt-4">
